@@ -1,0 +1,21 @@
+package Heap;
+
+public class MaxPQ {
+    Integer haep[];
+    int n;
+    public MaxPQ(int capacity){
+        Integer heap[]=new Integer[capacity+1];
+        int n=0;
+    }
+    public boolean isEmpty(){
+        return n==0;
+    }
+    public int size(){
+        return n;
+    }
+    public static void main(String []args){
+        MaxPQ pq=new MaxPQ(3);
+        System.out.println(pq.size());
+        System.out.println(pq.isEmpty());
+    }
+}
